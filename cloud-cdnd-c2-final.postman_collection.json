@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "3dfc3ba5-a1c8-4677-9760-2013b0e7488c",
+		"name": "cloud-cdnd-c2-final - aws link",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get picture and make it grey",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{HOST}}/api/v0/image_processing/filteredimage?image_url=https://lovingnewyork.de/wp-content/uploads/2020/02/Empire-State-Building-180125161749001-1-1600x960.jpg",
+					"protocol": "http",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"api",
+						"v0",
+						"image_processing",
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://lovingnewyork.de/wp-content/uploads/2020/02/Empire-State-Building-180125161749001-1-1600x960.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "udagram-731872987860-imagefilter-dev.eu-west-1.elasticbeanstalk.com"
+		}
+	]
+}
